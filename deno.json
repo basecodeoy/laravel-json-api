@@ -1,0 +1,18 @@
+{
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 120,
+		"indentWidth": 4,
+		"singleQuote": true,
+		"proseWrap": "preserve",
+		"include": [
+			"./"
+		],
+		"exclude": [
+			"build",
+			"public",
+			"tests",
+			"vendor"
+		]
+	}
+}

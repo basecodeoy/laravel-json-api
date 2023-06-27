@@ -1,0 +1,16 @@
+{
+    "data": {
+        "type": "basket",
+        "relationships": {
+            "empty": {
+                "links": {
+                    "related": "\/foo",
+                    "self": "\/bar"
+                },
+                "meta": {
+                    "foo": "bar"
+                }
+            }
+        }
+    }
+}

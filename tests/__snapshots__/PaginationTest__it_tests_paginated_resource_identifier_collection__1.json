@@ -1,0 +1,33 @@
+{
+    "data": {
+        "type": "baskets",
+        "relationships": {
+            "fruits": {
+                "data": [],
+                "links": {
+                    "first": "http:\/\/example.com\/basket\/1\/fruits?page=first",
+                    "prev": "http:\/\/example.com\/basket\/1\/fruits?page=3",
+                    "next": "http:\/\/example.com\/basket\/1\/fruits?page=5",
+                    "last": "http:\/\/example.com\/basket\/1\/fruits?page=last"
+                }
+            }
+        },
+        "id": "1"
+    },
+    "included": [
+        {
+            "type": "apples",
+            "attributes": {
+                "color": "red"
+            },
+            "id": "1"
+        },
+        {
+            "type": "apples",
+            "attributes": {
+                "color": "yellow"
+            },
+            "id": "2"
+        }
+    ]
+}

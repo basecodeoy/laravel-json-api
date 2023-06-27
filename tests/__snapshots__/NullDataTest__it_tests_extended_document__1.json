@@ -1,0 +1,12 @@
+{
+    "data": null,
+    "links": {
+        "self": "\/apples\/1"
+    },
+    "jsonapi": {
+        "version": "1.1"
+    },
+    "meta": {
+        "document_meta": "bar"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "data": {
+        "type": "basket",
+        "relationships": {
+            "content": {
+                "data": []
+            }
+        }
+    }
+}
