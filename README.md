@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/laravel-json-api/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-json-api" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-json-api">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/laravel-json-api" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-json-api">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/laravel-json-api" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-json-api">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/laravel-json-api" alt="License" />
-    </a>
-</p>
 
 ## About Laravel JsonApi
 
