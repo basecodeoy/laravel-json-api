@@ -12,4 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <a name="0.1.0"></a>
 ## 0.1.0 - 2023-06-27
 
-[Unreleased]: https://github.com/BombenProdukt/package_slug/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/faustbrian/package_slug/compare/0.1.0...HEAD
