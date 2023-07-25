@@ -23,7 +23,7 @@ final class RelationshipLink implements JsonSerializable
         $this->meta = $meta;
     }
 
-    public static function toOne(ResourceIdentifier|null $data, array $links = [], array $meta = []): static
+    public static function toOne(?ResourceIdentifier $data, array $links = [], array $meta = []): static
     {
         return new self($data, $links, $meta);
     }

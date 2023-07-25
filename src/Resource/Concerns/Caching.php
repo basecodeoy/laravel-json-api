@@ -10,14 +10,14 @@ use Illuminate\Support\Collection;
 
 trait Caching
 {
-    private string|null $idCache = null;
+    private ?string $idCache = null;
 
-    private string|null $typeCache = null;
+    private ?string $typeCache = null;
 
     /**
      * @var null|Collection<string, AbstractResource|AbstractResourceCollection>
      */
-    private Collection|null $requestedRelationshipsCache = null;
+    private ?Collection $requestedRelationshipsCache = null;
 
     /**/
     public function flush(): void
