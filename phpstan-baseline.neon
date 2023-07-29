@@ -1,6 +1,11 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Only booleans are allowed in an if condition, array\\<int\\|string, BombenProdukt\\\\JsonApi\\\\Data\\\\Meta\\> given\\.$#"
+			count: 1
+			path: src/Data/AbstractLink.php
+
+		-
 			message: "#^Method BombenProdukt\\\\JsonApi\\\\Data\\\\Attribute\\:\\:__construct\\(\\) has parameter \\$val with no type specified\\.$#"
 			count: 1
 			path: src/Data/Attribute.php
@@ -56,6 +61,11 @@ parameters:
 			path: src/Entity/EntityRepository.php
 
 		-
+			message: "#^Variable method call on BombenProdukt\\\\JsonApi\\\\Entity\\\\EntityInterface\\.$#"
+			count: 1
+			path: src/Entity/EntityRepository.php
+
+		-
 			message: "#^Unsafe usage of new static\\(\\)\\.$#"
 			count: 1
 			path: src/Entity/Relations/AbstractRelation.php
@@ -72,6 +82,11 @@ parameters:
 
 		-
 			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\Controller\\:\\:resolveRelationship\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Http/Controller/Controller.php
+
+		-
+			message: "#^Variable method call on \\$this\\(BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\Controller\\)\\.$#"
 			count: 1
 			path: src/Http/Controller/Controller.php
 
@@ -118,6 +133,11 @@ parameters:
 		-
 			message: "#^Unable to resolve the template type TValue in call to function collect$#"
 			count: 3
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Variable method call on Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
+			count: 1
 			path: src/Http/Controller/RelationshipController.php
 
 		-
@@ -199,6 +219,11 @@ parameters:
 			message: "#^Variable \\$rules might not be defined\\.$#"
 			count: 1
 			path: src/Http/Request/AbstractFormRequest.php
+
+		-
+			message: "#^Dynamic call to static method BombenProdukt\\\\JsonApi\\\\Http\\\\Request\\\\ResourceRequest\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Request/ResourceRequest.php
 
 		-
 			message: "#^Parameter \\#1 \\$name of method BombenProdukt\\\\JsonApi\\\\Entity\\\\Relations\\\\RelationRepository\\:\\:findByName\\(\\) expects string, string\\|null given\\.$#"
@@ -366,6 +391,11 @@ parameters:
 			path: src/Resource/AbstractResource.php
 
 		-
+			message: "#^Variable property access on mixed\\.$#"
+			count: 2
+			path: src/Resource/AbstractResource.php
+
+		-
 			message: "#^Cannot access property \\$resource on mixed\\.$#"
 			count: 1
 			path: src/Resource/AbstractResourceCollection.php
@@ -446,6 +476,11 @@ parameters:
 			path: src/Resource/Actions/ResolveResourceId.php
 
 		-
+			message: "#^Only booleans are allowed in an if condition, array given\\.$#"
+			count: 1
+			path: src/Resource/Model/ResourceIdentifier.php
+
+		-
 			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\Support\\\\Fields\\:\\:rememberResourceType\\(\\) has no return type specified\\.$#"
 			count: 1
 			path: src/Resource/Support/Fields.php
@@ -481,7 +516,17 @@ parameters:
 			path: src/Route/PendingResourceRegistration.php
 
 		-
+			message: "#^Variable method call on BombenProdukt\\\\JsonApi\\\\Route\\\\Relationships\\.$#"
+			count: 1
+			path: src/Route/PendingServerRegistration.php
+
+		-
 			message: "#^Property BombenProdukt\\\\JsonApi\\\\Route\\\\RelationshipRegistrar\\:\\:\\$resourceRelationship is never read, only written\\.$#"
+			count: 1
+			path: src/Route/RelationshipRegistrar.php
+
+		-
+			message: "#^Variable method call on \\$this\\(BombenProdukt\\\\JsonApi\\\\Route\\\\RelationshipRegistrar\\)\\.$#"
 			count: 1
 			path: src/Route/RelationshipRegistrar.php
 
@@ -499,6 +544,16 @@ parameters:
 			message: "#^Parameter \\#1 \\$route of method Illuminate\\\\Routing\\\\RouteCollection\\:\\:add\\(\\) expects Illuminate\\\\Routing\\\\Route, mixed given\\.$#"
 			count: 1
 			path: src/Route/ResourceRegistrar.php
+
+		-
+			message: "#^Variable method call on \\$this\\(BombenProdukt\\\\JsonApi\\\\Route\\\\ResourceRegistrar\\)\\.$#"
+			count: 1
+			path: src/Route/ResourceRegistrar.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Route/Route.php
 
 		-
 			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:__call\\(\\) has no return type specified\\.$#"
@@ -544,6 +599,11 @@ parameters:
 			message: "#^Parameter \\#1 \\$name of method Illuminate\\\\Routing\\\\Route\\:\\:parameter\\(\\) expects string, string\\|null given\\.$#"
 			count: 1
 			path: src/Route/Route.php
+
+		-
+			message: "#^Variable method call on Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
+			count: 4
+			path: src/Server/EloquentRepository.php
 
 		-
 			message: "#^Cannot call method parameter\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
