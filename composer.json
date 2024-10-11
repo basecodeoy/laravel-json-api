@@ -19,7 +19,7 @@
 		"php": "^8.2",
 		"bombenprodukt/laravel-package-powerpack": "^1.0",
 		"illuminate/contracts": "^10.0",
-		"spatie/laravel-query-builder": "^5.2"
+		"spatie/laravel-query-builder": "^6.2"
 	},
 	"require-dev": {
 		"bombenprodukt/php-cs-fixer-config": "^1.0",
