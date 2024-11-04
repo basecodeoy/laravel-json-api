@@ -1,0 +1,27 @@
+{
+    "data": [
+        {
+            "type": "apples",
+            "id": "1",
+            "meta": {
+                "apple_meta": "foo"
+            }
+        },
+        {
+            "type": "apples",
+            "id": "2",
+            "meta": {
+                "apple_meta": "foo"
+            }
+        }
+    ],
+    "links": {
+        "self": "\/apples"
+    },
+    "jsonapi": {
+        "version": "1.1"
+    },
+    "meta": {
+        "document_meta": "bar"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "data": {
+        "type": "apples",
+        "id": "1"
+    },
+    "links": {
+        "self": {
+            "href": "http:\/\/example.com",
+            "meta": {
+                "foo": "bar",
+                "test": true
+            }
+        }
+    }
+}

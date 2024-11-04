@@ -1,0 +1,13 @@
+{
+    "data": {
+        "type": "basket",
+        "relationships": {
+            "content": {
+                "data": {
+                    "type": "apples",
+                    "id": "1"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "data": {
+        "type": "apples",
+        "meta": {
+            "foo": "bar"
+        },
+        "attributes": {
+            "title": "Rails is Omakase"
+        },
+        "links": {
+            "self": "http:\/\/self"
+        },
+        "relationships": {
+            "author": {
+                "meta": {
+                    "foo": "bar"
+                },
+                "links": {
+                    "self": "http:\/\/rel\/author",
+                    "related": "http:\/\/author"
+                },
+                "data": null
+            }
+        },
+        "id": "1"
+    }
+}

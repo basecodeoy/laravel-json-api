@@ -1,0 +1,22 @@
+{
+    "data": {
+        "type": "companies",
+        "id": "1",
+        "meta": {
+            "apple_meta": "foo",
+            "bar": [
+                42
+            ]
+        }
+    },
+    "links": {
+        "self": "\/books\/123\/relationships\/publisher",
+        "related": "\/books\/123\/publisher"
+    },
+    "jsonapi": {
+        "version": "1.1"
+    },
+    "meta": {
+        "document_meta": "bar"
+    }
+}

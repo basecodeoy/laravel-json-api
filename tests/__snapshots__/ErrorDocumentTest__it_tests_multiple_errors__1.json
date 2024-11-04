@@ -1,0 +1,18 @@
+{
+    "errors": [
+        {
+            "id": "1",
+            "code": "invalid_parameter",
+            "source": {
+                "parameter": "foo"
+            }
+        },
+        {
+            "id": "2",
+            "code": "invalid_parameter",
+            "source": {
+                "parameter": "bar"
+            }
+        }
+    ]
+}

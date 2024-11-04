@@ -1,0 +1,24 @@
+{
+    "jsonapi": {
+        "version": "1.1"
+    },
+    "meta": {
+        "purpose": "test"
+    },
+    "errors": [
+        {
+            "id": "1",
+            "links": {
+                "about": "\/errors\/not_found"
+            },
+            "status": "404",
+            "code": "not_found",
+            "title": "Resource not found",
+            "detail": "We tried hard but could not find anything",
+            "source": {
+                "pointer": "\/data",
+                "parameter": "query_string"
+            }
+        }
+    ]
+}
