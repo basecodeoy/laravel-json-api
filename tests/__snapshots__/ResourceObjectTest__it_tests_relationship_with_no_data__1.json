@@ -1,0 +1,13 @@
+{
+    "data": {
+        "type": "basket",
+        "relationships": {
+            "empty": {
+                "links": {
+                    "related": "\/foo"
+                }
+            }
+        },
+        "id": "1"
+    }
+}

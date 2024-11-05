@@ -1,0 +1,641 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Only booleans are allowed in an if condition, array\\<int\\|string, BombenProdukt\\\\JsonApi\\\\Data\\\\Meta\\> given\\.$#"
+			count: 1
+			path: src/Data/AbstractLink.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Data\\\\Attribute\\:\\:__construct\\(\\) has parameter \\$val with no type specified\\.$#"
+			count: 1
+			path: src/Data/Attribute.php
+
+		-
+			message: "#^Using nullsafe method call on non\\-nullable type BombenProdukt\\\\JsonApi\\\\Data\\\\Meta\\. Use \\-\\> instead\\.$#"
+			count: 1
+			path: src/Data/JsonApi.php
+
+		-
+			message: "#^Cannot access offset 'data' on mixed\\.$#"
+			count: 1
+			path: src/Data/ToMany.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of method BombenProdukt\\\\JsonApi\\\\Data\\\\MemberInterface\\:\\:attachTo\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Data/ToMany.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of method BombenProdukt\\\\JsonApi\\\\Data\\\\ResourceIdentifierCollection\\:\\:attachTo\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Data/ToMany.php
+
+		-
+			message: "#^Property BombenProdukt\\\\JsonApi\\\\Data\\\\ToOne\\:\\:\\$identifier is never read, only written\\.$#"
+			count: 1
+			path: src/Data/ToOne.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Entity\\\\AbstractEntity\\:\\:allowedIncludes\\(\\) should return array\\<string\\> but returns array\\<string, BombenProdukt\\\\JsonApi\\\\Entity\\\\Relations\\\\RelationInterface\\>\\.$#"
+			count: 1
+			path: src/Entity/AbstractEntity.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Entity\\\\AbstractEntity\\:\\:getPaginator\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Entity/AbstractEntity.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Entity\\\\EntityRepository\\:\\:findBy\\(\\) should return BombenProdukt\\\\JsonApi\\\\Entity\\\\EntityInterface but returns mixed\\.$#"
+			count: 1
+			path: src/Entity/EntityRepository.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:filter\\(\\) expects \\(callable\\(mixed, int\\|string\\)\\: bool\\)\\|null, Closure\\(BombenProdukt\\\\JsonApi\\\\Entity\\\\EntityInterface\\)\\: bool given\\.$#"
+			count: 1
+			path: src/Entity/EntityRepository.php
+
+		-
+			message: "#^Property BombenProdukt\\\\JsonApi\\\\Entity\\\\EntityRepository\\:\\:\\$entities with generic class Illuminate\\\\Support\\\\Collection does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Entity/EntityRepository.php
+
+		-
+			message: "#^Variable method call on BombenProdukt\\\\JsonApi\\\\Entity\\\\EntityInterface\\.$#"
+			count: 1
+			path: src/Entity/EntityRepository.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Entity/Relations/AbstractRelation.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Entity\\\\Relations\\\\RelationRepository\\:\\:findByName\\(\\) should return BombenProdukt\\\\JsonApi\\\\Entity\\\\Relations\\\\RelationInterface but returns mixed\\.$#"
+			count: 1
+			path: src/Entity/Relations/RelationRepository.php
+
+		-
+			message: "#^Property BombenProdukt\\\\JsonApi\\\\Entity\\\\Relations\\\\RelationRepository\\:\\:\\$items with generic class Illuminate\\\\Support\\\\Collection does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Entity/Relations/RelationRepository.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\Controller\\:\\:resolveRelationship\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/Http/Controller/Controller.php
+
+		-
+			message: "#^Variable method call on \\$this\\(BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\Controller\\)\\.$#"
+			count: 1
+			path: src/Http/Controller/Controller.php
+
+		-
+			message: "#^Call to an undefined method Spatie\\\\QueryBuilder\\\\QueryBuilder\\:\\:jsonPaginate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\RelationshipController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\RelationshipController\\:\\:index\\(\\) should return Illuminate\\\\Http\\\\Resources\\\\Json\\\\AnonymousResourceCollection but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\RelationshipController\\:\\:store\\(\\) should return Illuminate\\\\Http\\\\Response but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\RelationshipController\\:\\:update\\(\\) should return Illuminate\\\\Http\\\\Response but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Parameter \\#1 \\$resourceType of method BombenProdukt\\\\JsonApi\\\\Server\\\\EloquentRepository\\:\\:findOrFail\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function collect expects Illuminate\\\\Contracts\\\\Support\\\\Arrayable\\<\\(int\\|string\\), mixed\\>\\|iterable\\<\\(int\\|string\\), mixed\\>\\|null, mixed given\\.$#"
+			count: 3
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 3
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 3
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Variable method call on Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
+			count: 1
+			path: src/Http/Controller/RelationshipController.php
+
+		-
+			message: "#^Call to an undefined method Spatie\\\\QueryBuilder\\\\QueryBuilder\\:\\:jsonPaginate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controller/ResourceController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\ResourceController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/ResourceController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\ResourceController\\:\\:index\\(\\) should return Illuminate\\\\Http\\\\Resources\\\\Json\\\\AnonymousResourceCollection but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/ResourceController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\ResourceController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Resources\\\\Json\\\\JsonResource but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/ResourceController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\ResourceController\\:\\:store\\(\\) should return Illuminate\\\\Http\\\\Resources\\\\Json\\\\JsonResource but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/ResourceController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Controller\\\\ResourceController\\:\\:update\\(\\) should return Illuminate\\\\Http\\\\Resources\\\\Json\\\\JsonResource but returns mixed\\.$#"
+			count: 2
+			path: src/Http/Controller/ResourceController.php
+
+		-
+			message: "#^Cannot call method parameter\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Http/Middleware/BootJsonApiMiddleware.php
+
+		-
+			message: "#^Parameter \\#1 \\$resourceType of method BombenProdukt\\\\JsonApi\\\\Entity\\\\EntityRepository\\:\\:findByResourceType\\(\\) expects string, object\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Http/Middleware/BootJsonApiMiddleware.php
+
+		-
+			message: "#^Parameter \\#1 \\$route of class BombenProdukt\\\\JsonApi\\\\Route\\\\Route constructor expects Illuminate\\\\Routing\\\\Route, Illuminate\\\\Routing\\\\Route\\|null given\\.$#"
+			count: 1
+			path: src/Http/Middleware/BootJsonApiMiddleware.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\JsonApi\\\\Http\\\\Request\\\\AbstractFormRequest\\:\\:isToMany\\(\\)\\.$#"
+			count: 2
+			path: src/Http/Request/AbstractFormRequest.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\JsonApi\\\\Http\\\\Request\\\\AbstractFormRequest\\:\\:isToOne\\(\\)\\.$#"
+			count: 2
+			path: src/Http/Request/AbstractFormRequest.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Request\\\\AbstractFormRequest\\:\\:currentRoute\\(\\) should return BombenProdukt\\\\JsonApi\\\\Route\\\\RouterInterface but returns mixed\\.$#"
+			count: 1
+			path: src/Http/Request/AbstractFormRequest.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Request\\\\AbstractFormRequest\\:\\:getAttributes\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Http/Request/AbstractFormRequest.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Http\\\\Request\\\\AbstractFormRequest\\:\\:getRelations\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Http/Request/AbstractFormRequest.php
+
+		-
+			message: "#^Parameter \\#1 \\$table of static method Illuminate\\\\Validation\\\\Rule\\:\\:exists\\(\\) expects string, object\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Http/Request/AbstractFormRequest.php
+
+		-
+			message: "#^Variable \\$rules might not be defined\\.$#"
+			count: 1
+			path: src/Http/Request/AbstractFormRequest.php
+
+		-
+			message: "#^Dynamic call to static method BombenProdukt\\\\JsonApi\\\\Http\\\\Request\\\\ResourceRequest\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Request/ResourceRequest.php
+
+		-
+			message: "#^Parameter \\#1 \\$name of method BombenProdukt\\\\JsonApi\\\\Entity\\\\Relations\\\\RelationRepository\\:\\:findByName\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Http/Request/ResourceRequest.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\JsonApi\\\\Paginator\\\\CursorPaginator\\:\\:cursorPaginate\\(\\)\\.$#"
+			count: 1
+			path: src/Paginator/CursorPaginator.php
+
+		-
+			message: "#^Cannot cast array\\|string\\|null to string\\.$#"
+			count: 1
+			path: src/Paginator/CursorPaginator.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:except\\(\\) expects array, array\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Paginator/CursorPaginator.php
+
+		-
+			message: "#^Parameter \\#2 \\$default of static method Illuminate\\\\Http\\\\Request\\:\\:query\\(\\) expects array\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Paginator/CursorPaginator.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\JsonApi\\\\Paginator\\\\LengthAwarePaginator\\:\\:paginate\\(\\)\\.$#"
+			count: 1
+			path: src/Paginator/LengthAwarePaginator.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:except\\(\\) expects array, array\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Paginator/LengthAwarePaginator.php
+
+		-
+			message: "#^Parameter \\#2 \\$default of static method Illuminate\\\\Http\\\\Request\\:\\:query\\(\\) expects array\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Paginator/LengthAwarePaginator.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\JsonApi\\\\Paginator\\\\PagePaginator\\:\\:simplePaginate\\(\\)\\.$#"
+			count: 1
+			path: src/Paginator/PagePaginator.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of static method Illuminate\\\\Support\\\\Arr\\:\\:except\\(\\) expects array, array\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Paginator/PagePaginator.php
+
+		-
+			message: "#^Parameter \\#2 \\$default of static method Illuminate\\\\Http\\\\Request\\:\\:query\\(\\) expects array\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Paginator/PagePaginator.php
+
+		-
+			message: "#^Anonymous function should return BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|Illuminate\\\\Support\\\\Collection but returns BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\|Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\>\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Cannot call method forPrefix\\(\\) on mixed\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Cannot call method getTable\\(\\) on mixed\\.$#"
+			count: 4
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Cannot call method parse\\(\\) on mixed\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Cannot call method resolve\\(\\) on mixed\\.$#"
+			count: 3
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\:\\:included\\(\\) should return Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\> but returns Illuminate\\\\Support\\\\Collection\\<int, mixed\\>\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\:\\:makeMany\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\:\\:makeMany\\(\\) has parameter \\$resource with generic class Illuminate\\\\Support\\\\Collection but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\:\\:nestedIncluded\\(\\) should return Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\> but returns Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\>\\>\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\:\\:rememberRequestRelationships\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\:\\:resolveAttributes\\(\\) should return Illuminate\\\\Support\\\\Collection\\<string, mixed\\> but returns Illuminate\\\\Support\\\\Collection\\<string, Closure\\(\\)\\: mixed\\>\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\:\\:resolveRelationships\\(\\) should return Illuminate\\\\Support\\\\Collection\\<string, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\|\\(Closure\\(\\)\\: BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\> but returns Illuminate\\\\Support\\\\Collection\\<string, Closure\\(\\)\\: \\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\)\\>\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\:\\:toArray\\(\\) return type with generic interface Illuminate\\\\Contracts\\\\Support\\\\Arrayable does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:mapWithKeys\\(\\) expects callable\\(mixed, int\\|string\\)\\: array\\<string, Closure\\(\\)\\: mixed\\>, Closure\\(string\\)\\: non\\-empty\\-array\\<string, Closure\\(\\)\\: mixed\\> given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:mapWithKeys\\(\\) expects callable\\(mixed, int\\|string\\)\\: array\\<string, mixed\\>, Closure\\(string, int\\|string\\)\\: non\\-empty\\-array\\<string, mixed\\> given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<int,mixed\\>\\:\\:filter\\(\\) expects \\(callable\\(mixed, int\\)\\: bool\\)\\|null, Closure\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\: bool given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<string,BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\|\\(Closure\\)\\>\\:\\:map\\(\\) expects callable\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\|Closure\\(\\)\\: BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource, string\\)\\: \\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\|null\\), Closure\\(callable, string\\)\\: \\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\|null\\) given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<string,BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\>\\:\\:flatMap\\(\\) expects callable\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection, string\\)\\: \\(array\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\>\\>\\|Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\>\\>\\), Closure\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\)\\: \\(Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\>\\|Illuminate\\\\Support\\\\Collection\\<int, Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\>\\>\\) given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Parameter \\#1 \\$items of method Illuminate\\\\Support\\\\Collection\\<string,Closure\\>\\:\\:merge\\(\\) expects Illuminate\\\\Contracts\\\\Support\\\\Arrayable\\<string, Closure\\(\\)\\: \\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\)\\>\\|iterable\\<string, Closure\\(\\)\\: \\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\|BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\)\\>, array\\<string, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\|\\(callable\\(\\)\\: BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\|Illuminate\\\\Http\\\\Resources\\\\PotentiallyMissing\\> given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Parameter \\#1 \\$items of method Illuminate\\\\Support\\\\Collection\\<string,Closure\\>\\:\\:merge\\(\\) expects Illuminate\\\\Contracts\\\\Support\\\\Arrayable\\<string, Closure\\(\\)\\: mixed\\>\\|iterable\\<string, Closure\\(\\)\\: mixed\\>, array\\<string, mixed\\> given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Unable to resolve the template type TMakeKey in call to method static method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:make\\(\\)$#"
+			count: 2
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Unable to resolve the template type TMakeValue in call to method static method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:make\\(\\)$#"
+			count: 2
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Variable property access on mixed\\.$#"
+			count: 2
+			path: src/Resource/AbstractResource.php
+
+		-
+			message: "#^Cannot access property \\$resource on mixed\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Cannot call method getTable\\(\\) on mixed\\.$#"
+			count: 4
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Cannot call method setAllowedFields\\(\\) on mixed\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Cannot call method setAllowedIncludes\\(\\) on mixed\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\:\\:paginationInformation\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\:\\:paginationInformation\\(\\) has parameter \\$default with no type specified\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\:\\:paginationInformation\\(\\) has parameter \\$paginated with no type specified\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResourceCollection\\:\\:paginationInformation\\(\\) has parameter \\$request with no type specified\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:each\\(\\) expects callable\\(mixed, int\\|string\\)\\: mixed, Closure\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\: BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:each\\(\\) expects callable\\(mixed, int\\|string\\)\\: mixed, Closure\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\: void given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:map\\(\\) expects callable\\(mixed, int\\|string\\)\\: BombenProdukt\\\\JsonApi\\\\Resource\\\\Model\\\\ResourceIdentifier, Closure\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\: BombenProdukt\\\\JsonApi\\\\Resource\\\\Model\\\\ResourceIdentifier given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:map\\(\\) expects callable\\(mixed, int\\|string\\)\\: Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\>, Closure\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\: Illuminate\\\\Support\\\\Collection\\<int, BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\> given\\.$#"
+			count: 2
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$key of method Illuminate\\\\Support\\\\Collection\\<\\(int\\|string\\),mixed\\>\\:\\:uniqueStrict\\(\\) expects \\(callable\\(mixed, int\\|string\\)\\: mixed\\)\\|string\\|null, Closure\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\: string given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$key of method Illuminate\\\\Support\\\\Collection\\<int,mixed\\>\\:\\:uniqueStrict\\(\\) expects \\(callable\\(mixed, int\\)\\: mixed\\)\\|string\\|null, Closure\\(BombenProdukt\\\\JsonApi\\\\Resource\\\\AbstractResource\\)\\: string given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Parameter \\#1 \\$model of method BombenProdukt\\\\JsonApi\\\\Entity\\\\EntityRepository\\:\\:findByModel\\(\\) expects string, class\\-string\\|false given\\.$#"
+			count: 1
+			path: src/Resource/AbstractResourceCollection.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Resource/Actions/ResolveResourceId.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, array given\\.$#"
+			count: 1
+			path: src/Resource/Model/ResourceIdentifier.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\Support\\\\Fields\\:\\:rememberResourceType\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Resource/Support/Fields.php
+
+		-
+			message: "#^Cannot call method filter\\(\\) on mixed\\.$#"
+			count: 1
+			path: src/Resource/Support/Includes.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\Support\\\\Includes\\:\\:forPrefix\\(\\) should return array\\<int, string\\> but returns array\\.$#"
+			count: 1
+			path: src/Resource/Support/Includes.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Resource\\\\Support\\\\Includes\\:\\:rememberIncludes\\(\\) return type with generic class Illuminate\\\\Support\\\\Collection does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Resource/Support/Includes.php
+
+		-
+			message: "#^Unable to resolve the template type TWhenReturnType in call to method Illuminate\\\\Support\\\\Collection\\<int,string\\>\\:\\:when\\(\\)$#"
+			count: 1
+			path: src/Resource/Support/Includes.php
+
+		-
+			message: "#^Parameter \\#1 \\$route of method Illuminate\\\\Routing\\\\RouteCollection\\:\\:add\\(\\) expects Illuminate\\\\Routing\\\\Route, mixed given\\.$#"
+			count: 1
+			path: src/Route/PendingResourceRegistration.php
+
+		-
+			message: "#^Property BombenProdukt\\\\JsonApi\\\\Route\\\\PendingResourceRegistration\\:\\:\\$registered has no type specified\\.$#"
+			count: 1
+			path: src/Route/PendingResourceRegistration.php
+
+		-
+			message: "#^Variable method call on BombenProdukt\\\\JsonApi\\\\Route\\\\Relationships\\.$#"
+			count: 1
+			path: src/Route/PendingServerRegistration.php
+
+		-
+			message: "#^Property BombenProdukt\\\\JsonApi\\\\Route\\\\RelationshipRegistrar\\:\\:\\$resourceRelationship is never read, only written\\.$#"
+			count: 1
+			path: src/Route/RelationshipRegistrar.php
+
+		-
+			message: "#^Variable method call on \\$this\\(BombenProdukt\\\\JsonApi\\\\Route\\\\RelationshipRegistrar\\)\\.$#"
+			count: 1
+			path: src/Route/RelationshipRegistrar.php
+
+		-
+			message: "#^Parameter \\#1 \\$route of method Illuminate\\\\Routing\\\\RouteCollection\\:\\:add\\(\\) expects Illuminate\\\\Routing\\\\Route, mixed given\\.$#"
+			count: 1
+			path: src/Route/Relationships.php
+
+		-
+			message: "#^Class BombenProdukt\\\\JsonApi\\\\Route\\\\RelationshipRegistrar constructor invoked with 6 parameters, 5 required\\.$#"
+			count: 1
+			path: src/Route/ResourceRegistrar.php
+
+		-
+			message: "#^Parameter \\#1 \\$route of method Illuminate\\\\Routing\\\\RouteCollection\\:\\:add\\(\\) expects Illuminate\\\\Routing\\\\Route, mixed given\\.$#"
+			count: 1
+			path: src/Route/ResourceRegistrar.php
+
+		-
+			message: "#^Variable method call on \\$this\\(BombenProdukt\\\\JsonApi\\\\Route\\\\ResourceRegistrar\\)\\.$#"
+			count: 1
+			path: src/Route/ResourceRegistrar.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 2
+			path: src/Route/Route.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:__call\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:__call\\(\\) has parameter \\$arguments with no type specified\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:__call\\(\\) has parameter \\$name with no type specified\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:getApiVersion\\(\\) should return string but returns object\\|string\\|null\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:getModel\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Model but returns object\\|string\\|null\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:getResourceName\\(\\) should return string\\|null but returns object\\|string\\|null\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:getResourceRelationship\\(\\) should return string\\|null but returns object\\|string\\|null\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Route\\\\Route\\:\\:getResourceType\\(\\) should return string but returns object\\|string\\|null\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Parameter \\#1 \\$name of method Illuminate\\\\Routing\\\\Route\\:\\:parameter\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Route/Route.php
+
+		-
+			message: "#^Variable method call on Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
+			count: 4
+			path: src/Server/EloquentRepository.php
+
+		-
+			message: "#^Cannot call method parameter\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Server/ServerRepository.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Server\\\\ServerRepository\\:\\:findByVersion\\(\\) should return BombenProdukt\\\\JsonApi\\\\Server\\\\ServerInterface but returns mixed\\.$#"
+			count: 1
+			path: src/Server/ServerRepository.php
+
+		-
+			message: "#^Parameter \\#1 \\$version of method BombenProdukt\\\\JsonApi\\\\Server\\\\ServerRepository\\:\\:findByVersion\\(\\) expects string, object\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Server/ServerRepository.php
+
+		-
+			message: "#^Property BombenProdukt\\\\JsonApi\\\\Server\\\\ServerRepository\\:\\:\\$servers with generic class Illuminate\\\\Support\\\\Collection does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/Server/ServerRepository.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Foundation\\\\Application\\:\\:\\$config\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:\\$id\\.$#"
+			count: 2
+			path: src/Test/ResourceTestResponse.php
+
+		-
+			message: "#^Method BombenProdukt\\\\JsonApi\\\\Test\\\\ResourceTestResponse\\:\\:__call\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Test/ResourceTestResponse.php
